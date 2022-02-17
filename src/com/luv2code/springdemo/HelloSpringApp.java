@@ -12,11 +12,12 @@ public class HelloSpringApp {
 
         //resgatar Bean do Spring Container
         Coach theCoach = context.getBean("myCoach", Coach.class);
-        Coach theSoccerManager = context.getBean("mySoccerManager", Coach.class);
 
         // chamar métodos no Bean
         System.out.println(theCoach.getDailyWorkout());
-        System.out.println(theSoccerManager.getDailyWorkout());
+
+        //chamar novo método vindo de "fortunes"
+        System.out.println(theCoach.getDailyFortune());
 
         // fechar
         context.close();

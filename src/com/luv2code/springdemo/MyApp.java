@@ -4,13 +4,12 @@ public class MyApp {
 
     public static void main(String[] args) {
 
-        //criar o objeto
+        //criar objeto
         Coach theCoach = new TrackCoach();
-        Coach theSoccerManager = new SoccerCoach();
 
-        //usar o objeto
+        //usar objeto
         System.out.println(theCoach.getDailyWorkout());
-        System.out.println(theSoccerManager.getDailyWorkout());
+
     }
 
 }
