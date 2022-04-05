@@ -12,8 +12,9 @@ public class SetterDemoApp {
         // trazer o bean do container spring
         CricketCoach theCoach = context.getBean("myCricketCoach", CricketCoach.class);
         // chamar métodos do bean
-        //depois
-        
+        System.out.println(theCoach.getDailyWorkout());
+        System.out.println(theCoach.getDailyFortune());
+
         // fechamento
         context.close();
     }

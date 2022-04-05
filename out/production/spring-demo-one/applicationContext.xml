@@ -20,7 +20,7 @@
     </bean>
 
     <!--Definir a dependência-->
-    <bean id="myFortune"
+    <bean id="myFortuneService"
           class="com.luv2code.springdemo.HappyFortuneService">
     </bean>
 
@@ -28,8 +28,16 @@
           class="com.luv2code.springdemo.TrackCoach">
 
         <!--fazer a injeção de construtor-->
-        <constructor-arg ref="myFortune"/>
+        <constructor-arg ref="myFortuneService"/>
     </bean>
+
+    <bean id="myCricketCoach"
+    class="com.luv2code.springdemo.CricketCoach">
+
+        <!-- setar a injeção do setter(?)-->
+        <property name="fortuneService" ref="myFortuneService" />
+    </bean>
+
 </beans>
 
 
