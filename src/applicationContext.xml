@@ -30,6 +30,14 @@
         <!--fazer a injeção de construtor-->
         <constructor-arg ref="myFortune"/>
     </bean>
+
+    <bean id="myCricketCoach"
+    class="com.luv2code.springdemo.CricketCoach">
+
+        <!-- setar a injeção do setter(?)-->
+        <property name="fortuneService" ref="myFortuneService" />
+    </bean>
+
 </beans>
 
 
