@@ -5,9 +5,13 @@ public class SoccerCoach implements Coach{
     //definir um campo privado para a dependência
     private FortuneService fortuneService;
 
+    public SoccerCoach(){
+
+    }
+
     //definir um construtor para a injeção de dependência
     public SoccerCoach(FortuneService theFortuneService) {
-        fortuneService = theFortuneService;
+        this.fortuneService = theFortuneService;
     }
 
     @Override
